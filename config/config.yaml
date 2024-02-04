@@ -1,0 +1,30 @@
+param:
+  resize_size: 20
+  momentum: 0.9
+  init_lr: 0.001
+  n_epochs: 20
+  batch_size: 32
+  gamma_of_focal_loss: 2
+
+switch:
+  process:
+    noise: True
+    resize: True
+    opening: True
+    closing: True
+    binary: False
+
+  slack: False 
+
+  flag:
+    all_processed_imgs_labels_save: False
+    pixel_frequency_hist_save: False
+    surface_area_of_dice_save: False
+    
+  model:
+    pretraind_model: False
+
+mode:
+  device:
+    num: 0 # 0 or 1
+
